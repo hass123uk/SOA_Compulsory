@@ -8,6 +8,9 @@ using System_Integration_Compulsory.Models;
 
 namespace System_Integration_Compulsory.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ProductsController : ApiController
     {
         private System_Integration_CompulsoryContext db = new System_Integration_CompulsoryContext();
@@ -16,13 +19,17 @@ namespace System_Integration_Compulsory.Controllers
         /// <summary>
         /// Get all products from the database.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>All Products</returns>
         public IQueryable<Product> GetProducts()
         {
             return db.Products;
         }
 
         // GET: api/Products/5
+        /// <summary>
+        /// Get a product from the database using the product id.
+        /// </summary>
+        /// <returns>A Product by ID</returns>
         [ResponseType(typeof(Product))]
         public IHttpActionResult GetProduct(long id)
         {
@@ -36,6 +43,10 @@ namespace System_Integration_Compulsory.Controllers
         }
 
         // PUT: api/Products/5
+        /// <summary>
+        /// Edit a product that is within the database using the product id.
+        /// </summary>
+        /// <returns>A Product by ID</returns>
         [ResponseType(typeof(void))]
         public IHttpActionResult PutProduct(long id, Product product)
         {

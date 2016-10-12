@@ -8,7 +8,7 @@ namespace System_Integration_Compulsory.Models
     public class Category
     {
         /// <summary>
-        /// The unique identifier Type: Long
+        /// The unique identifier; Type: Long
         /// </summary>
         [Required]
         public long Id { get; set; }

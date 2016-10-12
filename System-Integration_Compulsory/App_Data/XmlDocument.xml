@@ -517,7 +517,7 @@
         </member>
         <member name="P:System_Integration_Compulsory.Models.Category.Id">
             <summary>
-            The unique identifier Type: Long
+            The unique identifier; Type: Long
             </summary>
         </member>
         <member name="P:System_Integration_Compulsory.Models.Category.Name">

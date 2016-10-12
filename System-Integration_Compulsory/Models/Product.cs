@@ -26,7 +26,7 @@ namespace System_Integration_Compulsory.Models
         /// </summary>
         public Category Category { get; set; }
         /// <summary>
-        /// The how many items there are in stock
+        /// How many items there are in stock
         /// </summary>
         public long NumberInStock { get; set; }
     }

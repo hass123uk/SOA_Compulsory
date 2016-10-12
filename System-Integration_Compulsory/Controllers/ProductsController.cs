@@ -9,7 +9,7 @@ using System_Integration_Compulsory.Models;
 namespace System_Integration_Compulsory.Controllers
 {
     /// <summary>
-    /// 
+    /// The Products Controller provides the ability to Get, Update and Create Products within the Database. 
     /// </summary>
     public class ProductsController : ApiController
     {
@@ -29,7 +29,7 @@ namespace System_Integration_Compulsory.Controllers
         /// <summary>
         /// Get a product from the database using the product id.
         /// </summary>
-        /// <returns>A Product by ID</returns>
+        /// <returns>Product</returns>
         [ResponseType(typeof(Product))]
         public IHttpActionResult GetProduct(long id)
         {
@@ -44,9 +44,9 @@ namespace System_Integration_Compulsory.Controllers
 
         // PUT: api/Products/5
         /// <summary>
-        /// Edit a product that is within the database using the product id.
+        /// Update a product that is within the database using the given id.
         /// </summary>
-        /// <returns>A Product by ID</returns>
+        /// <returns>Void</returns>
         [ResponseType(typeof(void))]
         public IHttpActionResult PutProduct(long id, Product product)
         {
@@ -82,6 +82,10 @@ namespace System_Integration_Compulsory.Controllers
         }
 
         // POST: api/Products
+        /// <summary>
+        /// Create a new product within the database.
+        /// </summary>
+        /// <returns>Void</returns>
         [ResponseType(typeof(Product))]
         public IHttpActionResult PostProduct(Product product)
         {

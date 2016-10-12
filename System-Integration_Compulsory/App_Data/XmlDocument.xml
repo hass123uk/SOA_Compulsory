@@ -481,11 +481,73 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="T:System_Integration_Compulsory.Controllers.ProductsController">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:System_Integration_Compulsory.Controllers.ProductsController.GetProducts">
             <summary>
             Get all products from the database.
             </summary>
-            <returns></returns>
+            <returns>All Products</returns>
+        </member>
+        <member name="M:System_Integration_Compulsory.Controllers.ProductsController.GetProduct(System.Int64)">
+            <summary>
+            Get a product from the database using the product id.
+            </summary>
+            <returns>A Product by ID</returns>
+        </member>
+        <member name="M:System_Integration_Compulsory.Controllers.ProductsController.PutProduct(System.Int64,System_Integration_Compulsory.Models.Product)">
+            <summary>
+            Edit a product that is within the database using the product id.
+            </summary>
+            <returns>A Product by ID</returns>
+        </member>
+        <member name="T:System_Integration_Compulsory.Models.Category">
+            <summary>
+            Category of products
+            </summary>
+        </member>
+        <member name="P:System_Integration_Compulsory.Models.Category.Id">
+            <summary>
+            The unique identifier
+            </summary>
+        </member>
+        <member name="P:System_Integration_Compulsory.Models.Category.Name">
+            <summary>
+            The category name
+            </summary>
+        </member>
+        <member name="T:System_Integration_Compulsory.Models.Product">
+            <summary>
+            Product Attributes 
+            </summary>
+        </member>
+        <member name="P:System_Integration_Compulsory.Models.Product.Id">
+            <summary>
+            The unique identifier
+            </summary>
+        </member>
+        <member name="P:System_Integration_Compulsory.Models.Product.Name">
+            <summary>
+            The name of the product
+            </summary>
+        </member>
+        <member name="P:System_Integration_Compulsory.Models.Product.Price">
+            <summary>
+            The Price for one item of the product
+            </summary>
+        </member>
+        <member name="P:System_Integration_Compulsory.Models.Product.Category">
+            <summary>
+            In which category the product belongs
+            </summary>
+        </member>
+        <member name="P:System_Integration_Compulsory.Models.Product.NumberInStock">
+            <summary>
+            How many items there are in stock
+            </summary>
         </member>
     </members>
 </doc>
